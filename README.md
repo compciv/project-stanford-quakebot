@@ -81,5 +81,3 @@ And with all bots, GIGO
 
 - [Breaking news, literally: Newspaper's quakebot rumbled for fake story](https://www.theregister.co.uk/2017/06/22/la_times_bot_spreads_fake_news/)
 - [A massive earthquake was reported in California Wednesday — by mistake](https://www.washingtonpost.com/news/morning-mix/wp/2017/06/22/a-massive-earthquake-was-just-reported-in-california-turns-out-it-happened-in-1925/?utm_term=.9cbb37b8965d)
-hi
-asdjkfl

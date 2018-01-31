@@ -1,5 +1,6 @@
 # How-to instructions for setting things up via the Command Line
 
+hi
 
 - [creating-git-and-github-repo.md](./creating-git-and-github-repo.md)
 
