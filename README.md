@@ -1,14 +1,59 @@
 # Making a Quakebot for Stanford
 
-## Contents
+## The project
 
-- [00-calc_point_distances](00-calc_point_distances)
-- [01-create_google_maps_url](01-create_google_maps_url)
-- [02-parse_quakes](02-parse_quakes)
-- [03-fetch_quakes](03-fetch_quakes)
+Write a program that reads from the USGS Earthquakes API and generates automated stories that can be tweeted/texted/published -- a la Ken Schwenke's QuakeBot for the LA Times and [@earthquakebot](https://twitter.com/earthquakeBot/status/956568601850499074.
+
+But let's add some "personalization" for the Stanford community. Instead of generating a story that says an earthquake was detected somewhere, the story should tell us how far an earthquake was from Stanford University. And it should provide a URL that let's us see via Google Maps where a quake is relative to Stanford. 
+
+A few other requirements for our `stanford_quakebot` program:
+
+- The USGS data includes every kind of earthquake event, even ones that have the seismic impact equivalent to when your cat falls off your TV. To keep things simple, `stanford_quakebot` should just tell the user about quakes of magnitude 4.0+
+- The time of the earthquake detection should be expressed in California time.
+- The story should include a URL to a map visualizing the locations of Stanford and the detected quake.
 
 
-## Proposal
+##### Sample output
+
+> At 8:39 AM on Monday, January 25, 2018, the USGS detected a 5.8-magnitude earthquake about 204 km W of Ferndale, California, i.e. about 517.9 km from Stanford University.
+
+> Map: https://www.google.com/maps/dir/?api=1&origin=37.424107%2C-122.166077&destination=40.4372%2C-126.3397
+ 
+> More info about this quake: https://earthquake.usgs.gov/earthquakes/eventpage/us2000cpba
+
+For this example project, we'll focus on generating the story ("Content is king!"), and worry about how to programmatically tweet/text it laer.
+
+
+<a name="the-steps-list" id="the-steps-list"></a>
+
+## The steps
+
+1. [calc_geo_distance](steps/calc_geo_distance) - Calculate the distance between two latitude/longitude geo-coordinate points.
+2. [get_usgs_event_url](steps/get_usgs_event_url) - Given an ID for a USGS earthquake, generate the URL for that earthquake's official USGS page.
+3. [get_gmaps_locator_url](steps/get_gmaps_directions_url) Generate a Google (static) Maps URL that shows where 1 point is compared to another.
+4. [make_pretty_pacific_timestamp](steps/make_pretty_timestamp) - Convert a string that contains a timestamp. 
+4. [make_quake_story_text](steps/make_quake_story_text) - Given a sample data object, convert it into a "story" (i.e. text).
+5. [parse_usgs_quake_csv](steps/parse_usgs_quake_csv) - Given a sample CSV text file of earthquake data, open/read it and convert to Python data objects.
+6. [fetch_usgs_quake_csv](steps/fetch_usgs_quake_csv) - Fetch earthquake data from the USGS API.
+
+
+## And all together
+
+- [all-together/organizing-modules.md]
+- [all-together/writing-main-foo.md]
+
+
+## And beyond
+
+- [Earthquake stories for every zip code](extra-credit/zip-code-quakes)
+- [Creating a command-line interface](extra-credit/ui-ux-cli.md)
+- [Tweeting about quakes](extra-credit/tweet-quake.md)
+
+
+
+
+
+
 
 
 If ever you need ideas for programming, just take another idea and personalize it for yourself. Assuming you're a Stanford affiliate, can you think of ways to 
@@ -18,16 +63,6 @@ Create the code needed to read from the USGS Earthquake API and to create messag
 
 Sample message:
 
-    On Janary 25, 2018, 8:39 AM (PST), the USGS detected a 
-    5.8-magnitude earthquake about 204 km W of Ferndale, California,
-    -- which puts it 519.7 km from Stanford University. 
-
-    Here is the USGS official page:
-    https://earthquake.usgs.gov/earthquakes/eventpage/us2000cpba
-
-    Here is a map:
-    https://www.google.com/maps/dir/?api=1&origin=37.424107%2C-122.166077&destination=40.4372%2C-126.3397
-    
 
 
 

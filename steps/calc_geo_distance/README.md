@@ -1,9 +1,35 @@
 # calc_geo_distance
 
-## Summary
 
 In this lesson, we attempt to write a Python function to calculate the distance between two latitude/longitude geo-coordinate points, regardless of our ignorance of geometric principles. This is less a lesson about geospatial analysis and geometry than it is about the fundamental and vital software engineering practice of reusing other programmers' code. 
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents** 
+
+- [Goal](#goal)
+- [Background](#background)
+  - [To reuse is divine](#to-reuse-is-divine)
+  - [About geospatial coordinates](#about-geospatial-coordinates)
+  - [Real-world distance calculation](#real-world-distance-calculation)
+  - [Flaws and limitations](#flaws-and-limitations)
+- [How-to guide](#how-to-guide)
+  - [Googling for answers](#googling-for-answers)
+    - [How to avoid destroying yourself with other people's code](#how-to-avoid-destroying-yourself-with-other-peoples-code)
+    - [Slow and steady](#slow-and-steady)
+  - [Scrubbing someone code of hard-coded values](#scrubbing-someone-code-of-hard-coded-values)
+    - [Don't sweat geometry when you can focus on Python basics](#dont-sweat-geometry-when-you-can-focus-on-python-basics)
+    - [Why refactor variable assignments?](#why-refactor-variable-assignments)
+  - [Trust but verify](#trust-but-verify)
+  - [Making a function](#making-a-function)
+- [The solution](#the-solution)
+      - [1. Write the function definition](#1-write-the-function-definition)
+      - [2. The code for a function is indented relative to its definition](#2-the-code-for-a-function-is-indented-relative-to-its-definition)
+      - [3. Functions have arguments](#3-functions-have-arguments)
+      - [4. Functions have a return value](#4-functions-have-a-return-value)
+- [Do one thing and do it well](#do-one-thing-and-do-it-well)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
 ## Goal
