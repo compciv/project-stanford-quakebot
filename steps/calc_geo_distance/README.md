@@ -15,6 +15,7 @@ In this lesson, we attempt to write a Python function to calculate the distance 
   - [Real-world distance calculation](#real-world-distance-calculation)
   - [Flaws and limitations](#flaws-and-limitations)
 - [How-to guide](#how-to-guide)
+  - [Folder setup](#folder-setup)
   - [Googling for answers](#googling-for-answers)
     - [How to avoid destroying yourself with other people's code](#how-to-avoid-destroying-yourself-with-other-peoples-code)
     - [Slow and steady](#slow-and-steady)
