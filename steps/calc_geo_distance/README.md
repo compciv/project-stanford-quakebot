@@ -104,17 +104,26 @@ This next section is an extensive writeup that explains how to frame a problem i
 
 ### Folder setup
 
-Assuming you have a folder/git repo at:
+Create a new folder (don't worry about making a repo)
 
-```
-~/Desktop/project-stanford-quakebot
+```sh
+mkdir ~/Desktop/project-stanford-quakebot
 ```
 
 ```sh
-$ cd ~/Desktop/project-stanford-quakebot
-$ mkdir calc_geo_distance
+cd ~/Desktop/project-stanford-quakebot
+mkdir calc_geo_distance
+cd calc_geo_distance
 # download the skeleton function definition
-$ curl 
+
+# curl.exe for windows
+curl https://compciv.github.io/project-stanford-quakebot/steps/calc_geo_distance/foo.skeleton.py > foo.py
+
+curl -O https://compciv.github.io/project-stanford-quakebot/steps/calc_geo_distance/so_original_answer.py > so_original_answer.py
+
+curl -O https://compciv.github.io/project-stanford-quakebot/steps/calc_geo_distance/so_refactored_check.py > so_refactored_check.py
+
+curl -O https://compciv.github.io/project-stanford-quakebot/steps/calc_geo_distance/so_refactored_answer.py
 ```
 
 

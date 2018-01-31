@@ -1,8 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Making a Quakebot for Stanford](#making-a-quakebot-for-stanford)
+  - [The project](#the-project)
+        - [Sample output](#sample-output)
+  - [The steps](#the-steps)
+  - [And all together](#and-all-together)
+  - [And beyond](#and-beyond)
+  - [Background](#background)
+  - [Command for getting the data](#command-for-getting-the-data)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Making a Quakebot for Stanford
 
 ## The project
 
-Write a program that reads from the USGS Earthquakes API and generates automated stories that can be tweeted/texted/published -- a la Ken Schwenke's QuakeBot for the LA Times and [@earthquakebot](https://twitter.com/earthquakeBot/status/956568601850499074.
+Write a program that reads from the USGS Earthquakes API and generates automated stories that can be tweeted/texted/published -- a la Ken Schwenke's QuakeBot for the LA Times and [@earthquakebot](https://twitter.com/earthquakeBot/status/956568601850499074).
 
 But let's add some "personalization" for the Stanford community. Instead of generating a story that says an earthquake was detected somewhere, the story should tell us how far an earthquake was from Stanford University. And it should provide a URL that let's us see via Google Maps where a quake is relative to Stanford. 
 
@@ -116,3 +131,9 @@ And with all bots, GIGO
 
 - [Breaking news, literally: Newspaper's quakebot rumbled for fake story](https://www.theregister.co.uk/2017/06/22/la_times_bot_spreads_fake_news/)
 - [A massive earthquake was reported in California Wednesday — by mistake](https://www.washingtonpost.com/news/morning-mix/wp/2017/06/22/a-massive-earthquake-was-just-reported-in-california-turns-out-it-happened-in-1925/?utm_term=.9cbb37b8965d)
+
+
+
+## Command for getting the data
+
+curl 'https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2018-01-25&endtime=2018-01-25T23:59&minmagnitude=5' > data/sample-quakes.csv

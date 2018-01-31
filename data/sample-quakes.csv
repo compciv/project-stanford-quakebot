@@ -1,0 +1,10 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2018-01-25T23:55:14.860Z,55.7273,-149.7243,10,5,mww,,85,2.48,1.15,us,us2000cpiw,2018-01-30T04:13:58.040Z,"282km SE of Kodiak, Alaska",earthquake,6.7,1.9,0.041,56,reviewed,us,us
+2018-01-25T17:24:33.850Z,40.4296,-126.3863,8.19,5,mww,,68,1.564,1.09,us,us2000cpcn,2018-01-26T22:10:00.952Z,"180km W of Ferndale, California",earthquake,4.5,3.4,0.055,32,reviewed,us,us
+2018-01-25T16:39:43.230Z,40.4372,-126.3397,8.06,5.8,mww,,41,1.528,0.98,us,us2000cpba,2018-01-30T23:52:43.536Z,"176km W of Ferndale, California",earthquake,5.3,2.9,0.039,62,reviewed,us,us
+2018-01-25T10:41:14.070Z,-17.7562,-179.6446,620.51,5.7,mww,,35,8.481,1.06,us,us2000cp7l,2018-01-25T23:53:06.040Z,"180km SE of Lambasa, Fiji",earthquake,8.7,6.5,0.069,20,reviewed,us,us
+2018-01-25T10:25:42.630Z,-8.1218,-13.6908,10,5,mb,,40,0.688,1.35,us,us2000cp7j,2018-01-25T10:47:42.040Z,"82km ESE of Georgetown, Saint Helena",earthquake,8,1.9,0.064,78,reviewed,us,us
+2018-01-25T03:48:28.280Z,8.2832,91.7614,10,5.1,mb,,97,5.977,1.01,us,us2000cp5r,2018-01-25T04:01:47.040Z,"174km WNW of Mohean, India",earthquake,5.5,1.9,0.086,44,reviewed,us,us
+2018-01-25T03:44:13.340Z,-26.5892,67.5016,10,5.2,mb,,53,7.79,0.91,us,us2000cp65,2018-01-25T04:31:35.040Z,"Indian Ocean Triple Junction",earthquake,11.6,1.8,0.098,34,reviewed,us,us
+2018-01-25T02:10:33.560Z,55.4029,166.4776,8.83,6.2,mww,,125,5.175,1.08,us,us2000cp4y,2018-01-25T16:40:25.040Z,"38km NE of Nikol'skoye, Russia",earthquake,8.7,5.5,0.068,21,reviewed,us,us
+2018-01-25T01:15:58.870Z,8.2698,91.7832,10,5.9,mww,,31,5.951,1.25,us,us2000cp4g,2018-01-25T23:46:20.040Z,"172km WNW of Mohean, India",earthquake,8.2,1.8,0.073,18,reviewed,us,us
