@@ -1,5 +1,6 @@
 # calc_geo_distance
 
+(Return to the [top-level](../))
 
 In this lesson, we attempt to write a Python function to calculate the distance between two latitude/longitude geo-coordinate points, regardless of our ignorance of geometric principles. This is less a lesson about geospatial analysis and geometry than it is about the fundamental and vital software engineering practice of reusing other programmers' code. 
 
@@ -100,6 +101,22 @@ We don't have to -- nor do we need to -- fix these deficiencies that are inheren
 ## How-to guide
 
 This next section is an extensive writeup that explains how to frame a problem in a way that you can find other people's solutions to it. However, other people's code -- being written by other people -- is not code that is necessary safe or out-of-the-box ready for *you*. So this section contains some general strategies/patterns for refactoring someone's *specific-purpose* code to make the kind of *general-purpose* code that you need. 
+
+### Folder setup
+
+Assuming you have a folder/git repo at:
+
+```
+~/Desktop/project-stanford-quakebot
+```
+
+```sh
+$ cd ~/Desktop/project-stanford-quakebot
+$ mkdir calc_geo_distance
+# download the skeleton function definition
+$ curl 
+```
+
 
 
 ### Googling for answers
@@ -599,6 +616,7 @@ print('The distance is about', round(distmi, 1), 'miles')
 
 
 
+(Return to the [top-level](../))
 
 
 
